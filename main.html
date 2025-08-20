@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Holder Example</title>
+  <style>
+    .holder {
+      display: flex;
+      justify-content: center;   /* centers items horizontally */
+      align-items: center;       /* centers items vertically */
+      flex-wrap: wrap;           /* allows wrapping to next row */
+      gap: 20px;                 /* space between items */
+      min-height: 100vh;         /* center vertically on page */
+    }
+
+    .item {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .red { background: #e52b20; }
+    .green { background: #367c2b; }
+    .blue { background: blue; }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="holder">
+    <div class="item green">3</div>
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <!-- Add more items to see wrapping -->
+    <div class="item green">4</div>
+    <div class="item green">5</div>
+    <div class="item green">6</div>
+    <div class="item green">7</div>
+  </div>
 </body>
-
 </html>
