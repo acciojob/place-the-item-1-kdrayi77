@@ -1,2 +1,16 @@
+.holder {
+  display: flex;
+  flex-wrap: wrap;               /* items move to next row instead of shrinking */
+  justify-content: space-between; /* first touches left, last touches right, space between */
+}
 
-/* Your CSS Code here. */
+.item {
+  flex: 0 0 120px;  /* fixed width (don’t grow or shrink) */
+  height: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
