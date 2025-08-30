@@ -1,15 +1,1 @@
- .holder {
-  display: flex;                 /* ✅ required */
-  flex-wrap: wrap;               /* ✅ so items don’t squash */
-  justify-content: space-between; /* ✅ first at left, last at right, equal spacing */
-}
-
-.item {
-  flex: 0 0 120px;   /* fixed width, prevents squashing */
-  height: 120px;
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ 
